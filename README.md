@@ -11,7 +11,7 @@ Reserbus Wrapper for Node JS
 var reserbus = require('reserbus');
 
 reserbus.terminals({
-    name: 'México'
+    query: 'México'
 });
 ```
 
