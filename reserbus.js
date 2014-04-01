@@ -19,8 +19,14 @@ var Reserbus = function() {};
 
 Reserbus.prototype.API_BASE = 'https://www.reserbus.mx/api/';
 
-Reserbus.prototype.cities = function(callback) {
-    request.get(this.API_BASE + 'cities.json?prefetch=true', function(err, request, body) {
+Reserbus.prototype.cities = function(params, callback) {
+    var uri = 'cities.json'
+    for (var i in params) {
+        params[i] = replaceAccent(params[i]);
+    }
+    request.get(this.API_BASE + uri, {
+        qs: params || {}
+    }, function(err, request, body) {
         callback(err, JSON.parse(body));
     });
 }
