@@ -1,5 +1,5 @@
 {
-    "name": "reserbus-node",
+    "name": "reserbus",
     "description": "Reserbus wrapper for node.js",
     "version": "0.0.1",
     "_id": "reserbus@0.0.1",
@@ -11,6 +11,7 @@
         "type": "git",
         "url": "https://github.com/lastroom/reserbus-node"
     },
+    "main": "./reserbus.js",
     "engines": {
         "node": ">=0.10.15"
     },

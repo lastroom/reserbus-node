@@ -22,7 +22,9 @@ reserbus.terminals({
 ```javascript
 var reserbus = require('reserbus');
 
-reserbus.cities();
+reserbus.cities({prefetch: true}, function(err, result) {
+    console.log(err, result);
+});
 ```
 
 ## reserbus.search
