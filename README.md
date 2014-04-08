@@ -1,9 +1,17 @@
-Reserbus Wrapper for Node JS
+Reserbus node.js wrapper
 ====
+
+## Install
+
+```
+npm install reserbus-node
+```
+
+## Usage
 
 > Reserbus, service that sell buses around México
 
-## reserbus.terminals
+### reserbus.terminals
 
 > Search for terminals
 
@@ -15,7 +23,7 @@ reserbus.terminals({
 });
 ```
 
-## reserbus.cities
+### reserbus.cities
 
 > Search for cities
 
@@ -27,7 +35,7 @@ reserbus.cities({prefetch: true}, function(err, result) {
 });
 ```
 
-## reserbus.search
+### reserbus.search
 
 > Search for buses
 

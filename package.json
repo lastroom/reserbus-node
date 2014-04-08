@@ -1,6 +1,6 @@
 {
     "name": "reserbus",
-    "description": "Reserbus wrapper for node.js",
+    "description": "Reserbus node.js wrapper.",
     "version": "0.0.1",
     "_id": "reserbus@0.0.1",
     "dependencies": {
